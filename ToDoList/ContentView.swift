@@ -18,7 +18,9 @@ struct ContentView: View {
                     .foregroundColor(Color(hue: 0.735, saturation: 0.994, brightness: 0.399))
                 Spacer()
                 Button {
-                    showNewTask = true
+                    withAnimation {
+                        showNewTask = true
+                    }
                 } label: {
                     Text("+")
                         .font(.system(size:30))
